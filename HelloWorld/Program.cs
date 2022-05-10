@@ -6,6 +6,7 @@ namespace HelloWorld //used to orgnaize your code, and it is a container for lca
     {
         static void Main(string[] args)
         {
+            
             Console.WriteLine("Hello World");
             Console.WriteLine("I am learning C#");
             Console.WriteLine("It is awesome.");
@@ -22,6 +23,12 @@ namespace HelloWorld //used to orgnaize your code, and it is a container for lca
                  * comment
                  */
             }
+
+            /*
+             * 
+             * Commenting this out for the time being
+             * 
+             * 
             string name = "Josh";
             Console.WriteLine("My name is, " + name + ".");
 
@@ -48,7 +55,9 @@ namespace HelloWorld //used to orgnaize your code, and it is a container for lca
             string lastName = "Holly";
             Console.WriteLine(firstName+lastName);
 
-            /*
+            
+
+     
 
             Console.WriteLine("Please enter your name");
             string enterName = Console.ReadLine();
@@ -57,14 +66,32 @@ namespace HelloWorld //used to orgnaize your code, and it is a container for lca
             Console.WriteLine("please enter your age");
             int age = Convert.ToInt32(Console.ReadLine()); //converts from string input to integer
             Console.WriteLine("your age is, " + age);
-            */
+           */
 
-            string upper = "we are going to make this uppercase";
-            Console.Write(upper.ToUpper());
+            //strings
+            string txt = "adskfjalsdkjfa;lkdsjf";
+            Console.WriteLine(txt.ToUpper());
+            Console.WriteLine(txt.ToLower());
+
+            string firstName = "Josh ";
+            string lastName = "Holly";
+            string name = firstName + lastName; //combine strings
+            Console.WriteLine(name);
+            string nameTwo = string.Concat(firstName, lastName); //concatenate strings
+            Console.WriteLine(nameTwo);
+
+            string firstNameTwo = "John";
+            string lastNameTwo = "Doe";
+            string nameThree = $"My full name is: {firstNameTwo} {lastNameTwo}";
+            Console.WriteLine(nameThree);
+            Console.WriteLine(nameThree[0]); //prints first character in nameThree variable
+            Console.WriteLine(nameThree.IndexOf('J')); //show the index place of 'J' - will print '17' as it is the 17th position of the index
+            string txtTwo = "We are the so-called \"Vikings\" from the north."; // allows you to print with quotations without messing up the string variable
+            Console.WriteLine("It\'s alright \nforcing a line break \n" + txtTwo); //allows you to use ' without error
 
 
 
-            
+
         }
     }
 }
