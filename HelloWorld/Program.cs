@@ -38,12 +38,31 @@ namespace HelloWorld //used to orgnaize your code, and it is a container for lca
             double myDoubleNum = 5.99D;
             char myLetter = 'D';
             bool mybool = true;
+            float myfloat = 5.5f; //float example - stores 6-7 decimal points
+            double myDouble = 5.555555d; //doubl example - stores 15 decimal points
+
 
             int x = 5, y = 10, z = 15;
             Console.WriteLine(x + y + z);
             string firstName = "Josh";
             string lastName = "Holly";
-            Console.WriteLine(firstName+lastName); 
+            Console.WriteLine(firstName+lastName);
+
+            /*
+
+            Console.WriteLine("Please enter your name");
+            string enterName = Console.ReadLine();
+            Console.WriteLine("Your name is, " + enterName);
+
+            Console.WriteLine("please enter your age");
+            int age = Convert.ToInt32(Console.ReadLine()); //converts from string input to integer
+            Console.WriteLine("your age is, " + age);
+            */
+
+            string upper = "we are going to make this uppercase";
+            Console.Write(upper.ToUpper());
+
+
 
             
         }
